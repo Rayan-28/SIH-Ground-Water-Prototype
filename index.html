@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groundwater Monitoring & Prediction</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">Groundwater AI</a>
+            <ul>
+                <li><a href="#monitoring">Monitoring</a></li>
+                <li><a href="#prediction">Prediction</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Visualizing Tomorrow's Water, Today.</h1>
+            <p>An intuitive platform for monitoring and predicting groundwater levels to ensure a sustainable future.</p>
+            <a href="#monitoring" class="cta-button">View Live Monitoring</a>
+        </section>
+
+        <section id="monitoring">
+            <h2>Real-Time Groundwater Monitoring</h2>
+            <div class="monitoring-layout">
+                <div id="map-container">
+                    <p>Map loading...</p>
+                </div>
+                <div id="data-display">
+                    <h3>Well Information</h3>
+                    <p>Click a pin on the map to see details.</p>
+                    </div>
+            </div>
+        </section>
+
+        <section id="prediction">
+            <h2>Predictive Analysis for Proactive Action</h2>
+            <div class="prediction-layout">
+                <div class="form-container">
+                    <label for="region">Select Region:</label>
+                    <select id="region" name="region">
+                        <option value="north">North Zone</option>
+                        <option value="south">South Zone</option>
+                    </select>
+                    <label for="timeframe">Select Timeframe:</label>
+                    <select id="timeframe" name="timeframe">
+                        <option value="3m">Next 3 Months</option>
+                        <option value="6m">Next 6 Months</option>
+                    </select>
+                    <button id="forecast-btn">Generate Forecast</button>
+                </div>
+                <div id="prediction-result">
+                    <p>Your forecast will be displayed here.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About The Project</h2>
+            <p>This project is an entry for the Smart India Hackathon, aiming to provide a data-driven solution for effective groundwater management and conservation.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 SIH Team CIVIL NEXUS. All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
